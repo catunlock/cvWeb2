@@ -1,15 +1,20 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Fira Code', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80");
+    background-size: cover;
 }
 
 header {
-    background-color: pink;
     text-align: center;
-}
-
-main {
-    background-color: aquamarine;
 }
 
 #img {
@@ -20,6 +25,8 @@ main {
     background-position: center;
     border-radius: 10px;
     box-shadow: 0 0 40px rgba(5,5,38,0.1);
+    margin-left: 20px;
+
 }
 
 main > div:first-child {
@@ -30,7 +37,6 @@ main > div:first-child {
 }
 
 main > div:first-child > div:last-child {
-    background-color: cornflowerblue;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
@@ -38,18 +44,45 @@ main > div:first-child > div:last-child {
     align-items: center;
 }
 
+main h2 {
+    width: 100%;
+}
+
 .icons {
     display: flex;
     justify-content: space-around;
-    background-color: antiquewhite;
     width: 50%;
     font-size: 30px;
 }
 
 section{
-    background-color: burlywood;
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(5,5,38,0.1);
+}
+
+span, section i {
+    font-size: smaller;
+    color: gray;
 }
 
 footer {
-    background-color: bisque;
+    margin-bottom: 20px;
+}
+
+
+a, a:link, a:focus, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+i {
+    transition: all 1s cubic-bezier(.26,.69,.99,.38);
+    cursor: pointer;
+}
+
+i:hover {
+    transform: scale(2);
 }
