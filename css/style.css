@@ -1,0 +1,55 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: pink;
+    text-align: center;
+}
+
+main {
+    background-color: aquamarine;
+}
+
+#img {
+    width: 200px;
+    height: 200px;
+    background-image: url("../img/foto_carnet_alba.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgba(5,5,38,0.1);
+}
+
+main > div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main > div:first-child > div:last-child {
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    width: 50%;
+    font-size: 30px;
+}
+
+section{
+    background-color: burlywood;
+}
+
+footer {
+    background-color: bisque;
+}
